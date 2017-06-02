@@ -46,11 +46,7 @@ class BruncinDTC {
         void reset(void);
         boolean read(void);
 		boolean packBits(void);
-		
-		static uint8_t readBuffer[DTCBUFFER_LENGTH];
-		static uint16_t	outBuffer[OUTBUFFER_LENGTH];
-		static uint16_t lineidx;
-		static boolean recvdflag;
+		uint16_t *outBits(void);
 
     private:
 
